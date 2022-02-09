@@ -1,0 +1,11 @@
+.maindiv {
+    /*display div i center of the site*/
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color:#f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
