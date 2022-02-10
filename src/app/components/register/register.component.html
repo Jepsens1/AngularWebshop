@@ -4,13 +4,23 @@
     <div class="maindiv">
         <h2>Register Page</h2>
         <div class="username">
-            <input type="text" placeholder="Username">
+            <input id="username" [(ngModel)]="user.username" placeholder="Username">
         </div>
         <div class="password">
-            <input type="password" placeholder="Password">
+            <input id="password" [(ngModel)]="user.password" placeholder="Password">
         </div>
         <div>
-            <input type="email" placeholder="Email">
+            <input id="FirstName" [(ngModel)]="user.firstname" placeholder="FirstName">
+        </div><div>
+            <input id="LastName" [(ngModel)]="user.lastname" placeholder="LastName">
+        </div><div>
+            <input id="Email" [(ngModel)]="user.email" placeholder="Email">
+        </div>
+        <div>
+            <input id="Address" [(ngModel)]="user.address" placeholder="Address">
+        </div>
+        <div>
+            <input id="Phonenumber" [(ngModel)]="user.phoneNumber" placeholder="Phonenumber">
         </div>
         <div class="submitbtn">
             <button type="submit" (click)="OnSubmit()">Submit</button>
