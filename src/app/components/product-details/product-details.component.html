@@ -1,1 +1,12 @@
-<p>product-details works!</p>
+<div *ngIf="product">
+
+    <h2>{{product.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{product.id}}</div>
+    <div>
+      <label for="product-name">Product Details: </label>
+      <p>Name: {{product.name}}</p>
+      <p>Price: {{product.price}}</p>
+      <p>Quantity: {{product.quantity}}</p>
+    </div>
+    <button (click)="goBack()">go back</button>
+  </div>

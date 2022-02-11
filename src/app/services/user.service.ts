@@ -9,8 +9,10 @@ import { User } from '../interfaces/user';
 export class UserService {
 
   constructor(private http: HttpClient) { }
-  RegisterUser(user: User) : Observable<User>
+  RegisterUser(user: User)
   {
-    return this.http.post<User>('https://localhost:7102/Signup', user);
+    return this.http.post<User>('https://localhost:7102/Signup', user).subscribe(data => {
+      console.log(data);
+    });
   }
 }

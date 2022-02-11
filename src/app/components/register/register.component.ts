@@ -15,7 +15,6 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
   OnSubmit(){
-
     this.router.navigate(['/login']);
   }
 }
